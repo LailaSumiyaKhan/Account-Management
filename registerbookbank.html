@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registerbookbank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+	<!--Animate CSS-->
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!--BootNavbar CSS-->
+  <link rel="stylesheet" href="css/bootnavbar.css">
+  
+  <!--BootNavbar Js-->
+  <script src="js/bootnavbar.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="offcanvas.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="registerbookbank.css">
+
+
+    <!--daterange-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    
+
+
+
+
+</head>
+<body>
+    
+    <div class="sidebar-nav">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container bg-dark ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+                    <span class="navbar-toggler-icon  "></span>
+                </button>
+                
+                <header class="">
+                   
+                    <a class="navbar-brand fw-bold px-2 me-auto" href="#">Bank Register</a>
+                  
+                    </header>
+                    
+               
+                <div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                   
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <header class="pb-3">
+                                <img class="  d-block  rounded-circle  img-fluid  m-auto" src="image/image1.jpg" height="50px" width="50px" > 
+                                <a class="navbar-brand fw-bold text-info px-2 me-auto" href="#">Shopfront Limited</a>
+                              
+                                </header>
+                           
+                         <li>
+                           <div class="dropdown mt-2 ">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dashboard
+                                </button>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                                     <li><a class="dropdown-item " href="bootstrap.html">Dashboard</a></li>
+                                 <li><hr class="dropdown-divider text-white"></li>
+                                 </ul>
+                              </div>
+                           
+                            <div class="dropdown mt-2">
+                                <button class="btn btn-dark dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fund Management
+                                </button>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                                     <li><a class="dropdown-item   "  href="cashmanagement.html">Cash Management</a></li>
+                                 <li><hr class="dropdown-divider text-white"></li>
+                                  <li><a class="dropdown-item" href="bankmanagement.html">Bank Management</a></li>
+                                  <li><hr class="dropdown-divider text-white"></li>
+                                  <li><a class="dropdown-item" href="mobile_money_management.html">Mobile Money Management</a></li>
+                                  <li><hr class="dropdown-divider text-white"></li>
+                                </ul>
+                              </div>
+
+                              <div class="dropdown mt-2 ">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Payment Request
+                                </button>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item " href="new_request.html">New Request</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                    <li><a class="dropdown-item" href="pending_for_payment.html">Pending for payment</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                    <li><a class="dropdown-item" href="paid.html">Paid</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                    <li><a class="dropdown-item" href="bounced.html">Bounced</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                </ul>
+                              </div>
+                      
+
+                              <div class="dropdown mt-2 ">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Report
+                                </button>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                                   
+                                    <li class="dropdown">
+                                        <a class="dropdown-item bg-dark text-white dropdown-toggle" href="#" data-toggle="dropdown">Register Book</a>
+                                    <ul class="dropdown-menu bg-dark">
+                                        <li><hr class="dropdown-divider text-white"></li>
+                                        <li><a class="dropdown-item" href="#">Cash Register</a></li>
+                                        <li><a class="dropdown-item" href="registerbookbank.html">Bank Register</a></li>
+                                        <li><a class="dropdown-item" href="#">MFS Register</a></li>
+                                        <li><hr class="dropdown-divider text-white"></li>
+                                     
+                                        
+                                    </ul>
+                                    </li>
+
+
+                                 <li class="dropdown">
+                                    <a class="dropdown-item bg-dark text-white dropdown-toggle" href="#" data-toggle="dropdown">Burn Report</a>
+                                <ul class="dropdown-menu bg-dark">
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                    <li><a class="dropdown-item" href="rcfreport.html">RCF Report</a></li>
+                                    
+                                    <li><a class="dropdown-item" href="fcfreport.html">FCF Report</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+
+
+
+
+
+                                 
+                             
+                              </div>
+
+
+
+
+                    </div>
+                    </div>
+
+                <div class="btn-group">
+
+                    <a class="btn  btn-dark  text-white " href="payment.html" role="button">Payment</a>
+                    <li><hr class="dropdown-divider text-black"></li>
+                    <a class="btn btn-dark text-white" href="receive.html" role="button">Receive</a>
+                    <li><hr class="dropdown-divider text-black"></li>
+                    <a class="btn btn-dark text-white " href="contra.html" role="button">Contra</a>
+                    <li><hr class="dropdown-divider text-black"></li>
+                    <a class="btn btn-dark text-white " href="settings.html" role="button"><i class="bi bi-gear"></i></a>
+                    <li><hr class="dropdown-divider text-black"></li>
+
+
+
+                    
+                </div>
+            </div>
+        </nav>
+       
+          <div class="container mt-5  ">
+            <div class="row">
+              <div class="col-md-5 ">
+
+
+
+                <div class=" p-1 form-control-sm">
+
+                  <select class="form-select form-control-sm border-dark small p-1" aria-label="Default select example ">
+                      <option selected>MOKAM LTD. _1103222616002_FCF</option>
+                      <option value="1">   MOKAM LTD. _1103222616001_RCF
+      
+                      </option>
+                      <option value="2">MOKAM LTD. _1103222616002_FCF
+                      </option>
+                      <option value="3">MOKAM LTD. _1103222616003_RCF
+                      </option>
+                      <option value="4">MOKAM LTD. _1103222616004_FCF
+                      </option>
+                      <option value="5">REDX LOGISTICS LIMITED _1252952332001_RCF
+                      </option>
+                      <option value="6">REDX LOGISTICS LIMITED _1252952332002_FCF
+                      </option>
+                      <option value="7">SHOPFRONT LIMITED _1252631989001_RCF_Reserve
+      
+                      </option>
+                      <option value="8">SHOPFRONT LIMITED _01469737402_FCF_Salary Ac
+                      </option>
+                      <option value="9">UNICORN DISTRIBUTION LTD _1252825147001_RCF
+                      </option>
+                      <option value="10">UNICORN DISTRIBUTION LTD _1252825147002_FCF
+                      </option>
+                      <option value="11">UNICORN DISTRIBUTION LTD _1252825147003_FCF
+                      </option>
+                      <option value="12">POP DISTRIBUTION LIMITED _1252952321001_RCF
+      
+                      </option>
+                      <option value="13">POP DISTRIBUTION LIMITED _1252952321002_FCF
+      
+                      </option>
+                      <option value="14">BHAG DISTRIBUTION LTD. _1103422824001_RCF
+      
+                      </option>
+                      <option value="15">BHAG DISTRIBUTION LTD. _1103422824002_FCF
+      
+                  
+                      </option>
+      
+                    </select>
+                  
+              </div>
+              <input type="text" name="daterange" value="" />
+
+            <script>
+                $(
+                    function() 
+                    {
+                        $('input[name="daterange"]').daterangepicker
+                        (
+                            {
+                                opens: 'left'
+                            }, 
+                            function(start, end, label) 
+                            {
+                                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                            }
+                        );
+                    }
+                );
+            </script>
+
+
+              </div>
+              
+
+              
+              <div class="col-md-7">
+                <div class="bb">
+                  <button type="button" class="btn btn-light btn-sm">Pending</button>
+                  <button type="button" class="btn btn-light btn-sm"><img src="image/image7.jpg" width="20px" height="20px"></button>
+                  <button type="button" class="btn btn-light btn-sm"><img src="image/image4.jpg" width="20px" height="20px"></button>
+                <button type="button" class="btn btn-light btn-sm"><img src="image/image3.jpg" width="20px" height="20px"></button>
+                <button type="button" class="btn btn-light btn-sm "><img src="image/image5.jpg" width="20px" height="20px"></button>
+                <button type="button" class="btn btn-light btn-sm "><img src="image/image6.jpg" width="25px" height="25px"></button>
+              </div>
+                <div class="heading mt-1 "><h6 class="small text-right ">Shopfront Limited<br>50,Lake Circus,Kalabagan,Dhaka-1205</h6></div>
+                </div>
+            
+            
+
+
+<div class="aa">
+            <table class="mt-2">              
+                <tr>
+                
+                  <th style="width: 100px; text-align: center;">Balance as per BS</th>
+                  <th style="width:100px; text-align: center;">Beginning Balance</th>
+                  <th  style="width:100px; text-align: center;">Total received</th>
+                  <th  style="width:100px; text-align: center;">Total paid</th>
+                  <th style="width:100px; text-align: center;">Closing Balance</th>
+                  
+                </tr>
+
+                <tr>
+                  
+                  <td>16,858.00</td>
+                  <td>-</td>
+                  <td>110,400.00</td>
+                  <td>95,142.00</td>
+                  <td>15,258.00</td>
+
+                </tr> 
+            </table>
+          </div>
+        </div>
+              
+ 
+  
+            
+                             <table class="mt-4">
+                                
+                                
+                                  <tr>
+                                    <th  style="width:50px; text-align: center;">Date</th>
+                                    <th style="width:250px; text-align: center;">Description</th>
+                                    <th style="width:100px; text-align: center;">Cost_Type</th>
+                                    <th style="width:150px; text-align: center;">BU_Name</th>
+                                    <th style="width:50px; text-align: center;">Ref_No</th>
+                                    <th style="width:80px; text-align: center;">Payer</th>
+                                    <th style="width:80px; text-align: center;">Payee</th>
+                                    <th style="width:80px; text-align: center;">Inflows</th>
+                                    <th style="width:80px; text-align: center;">Outflows</th>
+                                    <th style="width:80px; text-align: center;">Balance</th>
+                                    <th style="width:100px; text-align: center;">Location</th>
+                                    <th style="width:80px; text-align: center;">Remarks</th>
+                                    <th style="width:80px; text-align: center;">Doc_View</th>
+                                    <th style="width:100px; text-align: center;">Status</th>
+                                    <th style="width:80px; text-align: center;">User</th>
+                                    <th style="width:80px; text-align: center;"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div</th>
+                                    <th style="width:90px; text-align: center;">ID</th>
+                                  </tr>
+
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Advance for food bill</td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0319</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="view1.html">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div</td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td ></td>                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td >Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                  <tr>
+                            
+                                    <td>30/06/2019</td>
+                                    <td>Conveyance paid to Bulbul		
+                                    </td>
+                                    <td>Margin</td>
+                                    <td>Argo & lifestyle</td>
+                                    <td>0512	</td>
+                                    <td>Azad</td>
+                                    <td>Shohel</td>
+                                    <td>0.00</td>
+                                    <td>15,000.00</td>
+                                    <td>15,258.00</td>
+                                    <td>ShopUp-Hq</td>
+                                    <td>V-Found</td>
+                                    <td class="text-center"><a href="#">View</a></td>
+                                    <td>In-Balance</td>
+                                    <td>User-1</td>
+                                    <td class="text-center"><div>
+                                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                    </div></td>
+                                    <td>CDC-010</td>
+                                    
+                                  </tr>
+                                 
+                                 
+                              </table>
+
+
+                </div>
+
+        
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+$("#bootnavbar").bootnavbar();
+});
+</script>
+
+
+
+
+
+
+
+
+

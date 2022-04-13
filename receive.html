@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+
+	<!--Animate CSS-->
+<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--BootNavbar CSS-->
+<link rel="stylesheet" href="css/bootnavbar.css">
+
+<!--BootNavbar Js-->
+<script src="js/bootnavbar.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="offcanvas.css"> 
+
+    <link rel="stylesheet" type="text/css" href="receive.css">
+</head>
+<body>
+    
+    <div class="sidebar-nav">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container bg-dark ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+                    <span class="navbar-toggler-icon  "></span>
+                </button>
+                
+                <header class="">
+                   
+                    <a class="navbar-brand fw-bold px-2 me-auto" href="#">Receive</a>
+                  
+                    </header>
+                    
+               
+                <div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                   
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <header class="pb-3">
+                                <img class="  d-block  rounded-circle  img-fluid  m-auto" src="image/image1.jpg" height="50px" width="50px" > 
+                                <a class="navbar-brand fw-bold text-info px-2 me-auto" href="#">Shopfront Limited</a>
+                              
+                                </header>
+                           
+                         <li>
+                            <div class="dropdown mt-2 ">
+                                <button class="btn btn-dark dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dashboard
+                                </button>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                                     <li><a class="dropdown-item " href="bootstrap.html">Dashboard</a></li>
+                                 <li><hr class="dropdown-divider text-white"></li>
+                                 </ul>
+                              </div>
+
+                            <div class="dropdown mt-2 ">
+                                <button class="btn btn-dark dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fund Management
+                                </button>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                                     <li><a class="dropdown-item " href="cashmanagement.html">Cash Management</a></li>
+                                 <li><hr class="dropdown-divider text-white"></li>
+                                  <li><a class="dropdown-item" href="bankmanagement.html">Bank Management</a></li>
+                                  <li><hr class="dropdown-divider text-white"></li>
+                                  <li><a class="dropdown-item" href="mobile_money_management.html">Mobile Money Management</a></li>
+                                  <li><hr class="dropdown-divider text-white"></li>
+                                </ul>
+                              </div>
+
+                              <div class="dropdown mt-2 ">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Payment Request
+                                </button>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item " href="new_request.html">New Request</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                    <li><a class="dropdown-item" href="pending_for_payment.html">Pending for payment</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                    <li><a class="dropdown-item" href="paid.html">Paid</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                    <li><a class="dropdown-item" href="bounced.html">Bounced</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                </ul>
+                              </div>
+                              <div class="dropdown mt-2 ">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Report
+                                </button>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                                   
+                                    <li class="dropdown">
+                                        <a class="dropdown-item bg-dark text-white dropdown-toggle" href="#" data-toggle="dropdown">Register Book</a>
+                                    <ul class="dropdown-menu bg-dark">
+                                        <li><hr class="dropdown-divider text-white"></li>
+                                        <li><a class="dropdown-item" href="#">Cash Register</a></li>
+                                        <li><a class="dropdown-item" href="registerbookbank.html">Bank Register</a></li>
+                                        <li><a class="dropdown-item" href="#">MFS Register</a></li>
+                                        <li><hr class="dropdown-divider text-white"></li>
+                                     
+                                        
+                                    </ul>
+                                    </li>
+
+
+                                 <li class="dropdown">
+                                    <a class="dropdown-item bg-dark text-white dropdown-toggle" href="#" data-toggle="dropdown">Burn Report</a>
+                                <ul class="dropdown-menu bg-dark">
+                                    <li><hr class="dropdown-divider text-white"></li>
+                                    <li><a class="dropdown-item" href="rcfreport.html">RCF Report</a></li>
+                                    
+                                    <li><a class="dropdown-item" href="fcfreport.html">FCF Report</a></li>
+                                    <li><hr class="dropdown-divider text-white"></li>
+
+
+
+
+
+                                 
+                             
+                              </div>
+
+
+
+
+                    </div>
+                    </div>
+
+                   
+                    <div class="btn-group">
+
+                        <a class="btn  btn-dark  text-white " href="payment.html" role="button">Payment</a>
+                        <li><hr class="dropdown-divider text-black"></li>
+                        <a class="btn btn-dark text-white" href="receive.html" role="button">Receive</a>
+                        <li><hr class="dropdown-divider text-black"></li>
+                        <a class="btn btn-dark text-white " href="contra.html" role="button">Contra</a>
+                        <li><hr class="dropdown-divider text-black"></li>
+                        <a class="btn btn-dark text-white " href="settings.html" role="button"><i class="bi bi-gear"></i></a>
+                        <li><hr class="dropdown-divider text-black"></li>
+    
+    
+    
+                        
+                    </div>
+                </div>
+            </nav>
+    </div>
+
+    
+
+<div class="container  mt-5">
+    <div class="cc">
+    <form class="row g-3 align-items-center">
+   <div class="col-md-1 small px-0 ">
+            <label for="username" class="form-label small ">User Name</label>
+            <input type="text" class="form-control  form-control-sm p-1 border-dark" id="username" placeholder="Auto-fill" aria-describedby="passwordHelpInline">
+        
+        </div>
+
+     <div class="col-md-1 small px-0">
+               <label for="username" class="form-label small ">Entry Date</label>
+            <input type="text" class="form-control  form-control-sm  border-dark" id="username"placeholder="Auto" >
+            </div>
+        
+            
+        <div class="col-md-1 small px-0" >
+            <label for="username" class="form-label small ">Time</label>
+            <input type="text" class="form-control   form-control-sm border-dark" id="username" placeholder="Auto" >
+        
+        
+        </div>
+        
+        <div class="col-md-2 small px-0">
+            <label for="username" class="form-label small">ID</label>
+            <input type="text" class="form-control form-control-sm p-1 border-dark" id="username"placeholder="Auto filled" required>
+        
+        </div>
+        <div class="col-md-2 small px-0">
+            <label for="username" class="form-label small">Ref No</label>
+            <input type="number" class="form-control  form-control-sm p-1 border-dark" id="username" required>
+
+        </div>
+
+
+        <div class="col-md-1 small px-0">
+            <label for="username" class="form-label small p-0">Date</label>
+            <input type="text" class="form-control   form-control-sm p-1 border-dark" id="username"  required>
+
+        </div>
+    
+
+        <div class="col-md-4 small  ">
+            <div class=" p-1 form-control-sm">Received From</div>
+            <select class="form-select form-control-sm border-dark small p-1" aria-label="Default select example ">
+                <option selected></option>
+                <option value="1">   MOKAM LTD. _1103222616001_RCF
+
+                </option>
+                <option value="2">MOKAM LTD. _1103222616002_FCF
+                </option>
+                <option value="3">MOKAM LTD. _1103222616003_RCF
+                </option>
+                <option value="4">MOKAM LTD. _1103222616004_FCF
+                </option>
+                <option value="5">REDX LOGISTICS LIMITED _1252952332001_RCF
+                </option>
+                <option value="6">REDX LOGISTICS LIMITED _1252952332002_FCF
+                </option>
+                <option value="7">SHOPFRONT LIMITED _1252631989001_RCF_Reserve
+
+                </option>
+                <option value="8">SHOPFRONT LIMITED _01469737402_FCF_Salary Ac
+                </option>
+                <option value="9">UNICORN DISTRIBUTION LTD _1252825147001_RCF
+                </option>
+                <option value="10">UNICORN DISTRIBUTION LTD _1252825147002_FCF
+                </option>
+                <option value="11">UNICORN DISTRIBUTION LTD _1252825147003_FCF
+                </option>
+                <option value="12">POP DISTRIBUTION LIMITED _1252952321001_RCF
+
+                </option>
+                <option value="13">POP DISTRIBUTION LIMITED _1252952321002_FCF
+
+                </option>
+                <option value="14">BHAG DISTRIBUTION LTD. _1103422824001_RCF
+
+                </option>
+                <option value="15">BHAG DISTRIBUTION LTD. _1103422824002_FCF
+
+            
+                </option>
+
+              </select>
+        </div>
+       
+
+        </form>
+        </div>
+</div>
+
+<div class="container  shadow-lg mt-4" >
+    <div class=" border  shadow-sm px-3 ">
+
+
+    <form class="row g-3 align-items-center">
+   <div class="col-md-2 small px-0  ">
+                    <label for="dname" class="form-label mb-2 pb-2 ">Description</label>
+                    <input type="text" class="form-control form-control p-1  mb-1 border-dark" name="dname" id="dname" required>
+                
+                </div>
+                <div class="col-md-2 small px-0 pb-2 ">
+                    <label for="cname " class=" form-control-sm form-label small ">Cost Type</label>
+                        <select class="form-select form-control form-control-sm border-dark small p-1" name="cname"  id="cname" aria-label="Default select example " required>
+                            <option selected></option>
+                            <option > Margin </option>
+                            <option>Investment:OPEX  </option>
+                            <option > Investment:CAPEX </option>
+                            <option > Contra</option>
+                            <option >  Loan </option>
+                            <option > Sales Receipt</option> 
+                            <option > Source Seller/Merchnat/Anchor Payment </option>
+                            <option >  Payment </option>
+                            <option >  Direct: Agency Cost / Manpower Cost (DSR costs) </option>
+                            <option > Direct: SMS Cost </option>
+                            <option >  Direct: Staff Cost </option>
+                            <option > Direct: Fleet Rental Cost </option>
+                            <option > Direct: Packing materials </option>
+                            <option > Direct: Pickup Van Rent </option>
+                            <option >  Direct: Incentives (Reseller Bonus) </option>
+                            <option > Direct: Labour Cost </option>
+                            <option > Direct: Damage, Compensation and Other Charges</option>
+                            <option >  Other Charges </option>
+                            <option > Direct: Fuel cost </option>
+                            <option > Direct: Conveyance </option>
+                            <option > Direct:Logistic expense </option>
+                            <option > Mkt: Marketing Facebook Costs/ Promotional Cost</option>
+                            <option > Mkt: Own SR </option>
+                            <option > Mkt: Outsourced SR </option>
+                            <option > Mkt: BD Team Salary </option>
+                            <option > Indirect: Brand marketing and promotions </option>
+                            <option > Indirect: Food </option>
+                            <option > Indirect: Office Supplies </option>
+                            <option >  Indirect: Other </option>
+                            <option > Indirect: Rent and rates </option>
+                            <option > Indirect: Warehouse/DB/Hub Rent </option>
+                            <option > Indirect: Salaries </option>
+                            <option > Indirect: Security Expense </option>
+                            <option >   Indirect: Repair and maintenance </option>
+                            <option > Indirect: Admin Cost</option>
+                            <option >Indirect: Telecommunication</option>
+                            <option > Indirect: Training and meeting</option>
+                            <option > Indirect: Travelling and Conveyance </option>
+                            <option > Indirect: Utilities </option>
+                            <option > Indirect: Legal/ Professional/ Renewal fees </option>
+                            <option > Indirect: Bank, bKash, Rocket and Nagad charges</option>
+                            <option > Indirect: Warehouse Handling Losses/Damage</option>
+                            <option > Indirect: ShopUp Bangalore Expenses </option>
+                            <option > Indirect: ShopUp Singapore Expenses </option>
+                            <option > Indirect: ShopUp Bangalore Salaries </option>
+                            <option > CAPEX: Vehicle</option>
+                            <option > CAPEX: IT Assets </option>
+                            <option > CAPEX: Furnitues & Fixtures </option>
+                            <option >  CAPEX: HUB/DB/Warehouse development Costs </option>
+                            <option > CAPEX: Advance for New HUBs/DBs/Warehouse/CO </option>
+                            <option >  CAPEX: Other Assets </option>
+                            
+                        </select>
+                </div>
+                    
+                    
+
+                    <div class="col-md-1 small px-0 ">
+                        <label for="pname" class="form-label mb-2 pb-2 ">Paid To</label>
+                        <input type="text" class="form-control form-control p-1 mb-1 border-dark" name="pname" id="pname" required>
+                    
+                    </div>
+                    <div class="col-md-1 small px-0 pb-2 ">
+                        <label for="bname " class=" form-control-sm form-label small ">BU Name</label>
+                            <select class="form-select form-control form-control-sm border-dark small p-1" name="bname"  id="bname" aria-label="Default select example " required>
+                                <option selected></option>
+
+                                <option > Agro & Lifestyle </option>
+                                <option> Blitz </option>
+                                   <option> Electronics</option>
+                                   <option> Fresh</option>
+                                   <option>Reloaded</option> 
+                                   <option>Reseller</option> 
+                                   <option>Self Service</option> 
+                                    <option>UDL</option>
+                                   <option> POP</option>
+                                   <option>Mokam Common</option> 
+                                  <option>  Cargo Corporate</option>
+                                   <option> REDX </option>
+                                    <option>Cargo Parcel</option>
+                                    <option>Digital Credit</option>
+                                    <option>COH</option>  
+                                   <option>India AC</option> 
+                                   <option> Infra</option>
+                                   <option>BHAG</option> 
+                                   <option>SRO</option> 
+                                   <option>Payra</option> 
+                                   <option>Apparels</option> 
+                                   <option>Pharma</option> 
+                                   <option>Energy</option> 
+                  </select>
+                    </div>
+               
+                    <div class="col-md-1 small px-0 pb-2 ">
+                        <label for="lname " class=" form-control-sm form-label small ">Location</label>
+                            <select class="form-select form-control form-control-sm border-dark small p-1" name="lname"  id="lname" aria-label="Default select example " required>
+                                <option selected></option>
+
+                                <option >ShopUp HQ </option>
+                                <option> Unicorn HQ </option>
+                            <option>Mokam HQ</option> 
+                            <option>REDX HQ</option>  
+                            <option>POP HQ</option>   
+                            <option>BHAG HQ</option>  
+                            <option>ACI Pure Flour Ltd_Tejgoan</option>  
+                            <option>Marico_Rangpur</option>  
+                            <option>Olympic_Mirpur-1</option>  
+                            <option>Unilever Bangladesh Limited_Dhamrai</option> 
+                            <option>Marico Bangladesh Limited_Badda</option> 
+                            <option>Jatrabari_Cross Dock</option> 
+                            <option>Uttara_Cross Dock</option>  
+                            <option>Nilphamari_Blitz</option>  
+                            <option>Mymenshing_Fresh</option>   
+                            </select>
+                    </div>
+                        
+                    <div class="col-md-1 small px-0 pb-2 ">
+                        <label for="sname " class=" form-control-sm form-label small ">Status</label>
+                            <select class="form-select form-control form-control-sm border-dark small p-1" name="sname"  id="sname" aria-label="Default select example " required>
+                                <option selected></option>
+                               
+                                <option > In-Balance </option>
+                                <option>Outstanding </option>
+                            </select>
+                    </div>
+                    <div class="col-md-1 small px-0 ">
+                        <label for="aname" class="form-label mb-2 pb-2 ">Amount(BDT)</label>
+                        <input type="text" class="form-control form-control p-1 mb-1 border-dark" name="aname" id="aname" required>
+                    
+                    </div>
+
+                    <div class="col-md-1 small pt-4 px-3">
+                        <tr id="btna bg-secondary ">
+                                       <td colspan="3">
+                                           
+                                        <button type="button" class="btn btn-secondary" name="button" id="btn" onclick="AddRow()">Add</button>
+                                          
+                                       </td>
+                                       </tr>
+                    </div>
+
+
+                    <div class="col-md-1 small mt-4"> 
+                       <input type="file" id="real-file" hidden="hidden">
+                      
+                       
+                       <button type="button " id="custom-button"><h6 class="">Upload</h6> </button>
+                    </div>
+                       <div class="col-md-1 small mt-5">
+                   
+                       <span id="custom-text small"><p class="small"> Only pdf, doc, xls, xlsx file allowed.</p></span>
+                       </div>
+                    
+
+                   <script type="text/javascript">
+                       const realFileBtn = document.getElementById("real-file");
+                       const customBtn = document.getElementById("custom-button");
+                       const customTxt = document.getElementById("custom-text");
+
+                customBtn.addEventListener("click",function(){ 
+                    realFileBtn.click();
+                });
+
+                realFileBtn.addEventListener("change",function(){
+                    if (realFileBtn.value){
+                        customTxt.innerHTML=realFileBtn.value.match( /[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                    
+                    } else{
+                        customTxt.innerHTML="No File Chosen,Yet!";
+                    }
+                });
+
+                
+                   </script>
+                    </form>
+                </div>
+
+
+
+<div class="container  mt-5">
+<table border="2"  id="show">
+<thead>
+<tr>
+<th>Description</th>
+<th>Cost Type</th>
+<th>Paid To</th>
+<th>BU Name</th>
+<th>Location</th>
+<th>Status</th>
+<th>Amount</th>
+</tr>
+</thead>
+</table>
+ 
+
+<div class="container">
+    <div class="row">
+<div class="col-md-9 mt-3" >
+     
+<div class="form-group ">
+            <input type="text" class="form-control border-dark " placeholder="In Words:">
+        </div>
+</div>
+
+    <div class="col-md-3 mt-3" >
+     
+        <div class="form-group ">
+                    <input type="text" class="form-control border-dark " placeholder="Total">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-12 mt-5 " >
+
+        <form class="comment-form">
+            <input type="text" class="form-control border-dark" placeholder="Write your comment">
+    </form>
+    </div>
+    
+
+
+<div class="col-md-5 mt-4 pb-4" >
+
+
+<button type="button" class="btn btn-secondary">Edit</button>
+<button type="button" class="btn btn-secondary">Save</button>
+<button type="button" class="btn btn-secondary">Save & New</button>
+<button type="button" class="btn btn-secondary">Save & Print</button>
+</div>
+
+</div>
+
+</div>
+
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        var list1 =[];
+        var list2 =[];
+        var list3 =[];
+        var list4 =[];
+        var list5 =[];
+        var list6 =[];
+        var list7 =[];
+    
+        var n=1;
+        var x=0;
+    
+        function AddRow(){
+            var AddRown =document.getElementById('show');
+            var NewRow =AddRown.insertRow(n)
+
+
+    
+            list1[x] = document.getElementById('dname').value;
+            list2[x] = document.getElementById('cname').value;
+            list3[x] = document.getElementById('pname').value;
+            list4[x] = document.getElementById('bname').value;
+            list5[x] = document.getElementById('lname').value;
+            list6[x] = document.getElementById('sname').value;
+            list7[x] = document.getElementById('aname').value;
+
+
+            var cel1 = NewRow.insertCell(0);
+            var cel2 = NewRow.insertCell(1);
+            var cel3 = NewRow.insertCell(2);
+            var cel4 = NewRow.insertCell(3);
+            var cel5 = NewRow.insertCell(4);
+            var cel6 = NewRow.insertCell(5);
+            var cel7 = NewRow.insertCell(6);
+
+            cel1.innerHTML = list1[x]
+            cel2.innerHTML = list2[x]
+            cel3.innerHTML = list3[x]
+            cel4.innerHTML = list4[x]
+            cel5.innerHTML = list5[x]
+            cel6.innerHTML = list7[x]
+            cel7.innerHTML = list7[x]
+
+            n++;
+            x++;
+        }
+
+       
+
+      
+    
+    </script>
+    
+
+</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+$("#bootnavbar").bootnavbar();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+

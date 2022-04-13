@@ -1,0 +1,80 @@
+
+.sidebar-nav .container{
+    
+}
+
+
+.sidebar-nav ul li a {
+    font-size: 26px;
+    text-decoration:none;
+    display: block;
+    padding: 6px 10px;
+    transition: 0.5s;
+    color: aliceblue;
+
+}
+.sidebar-nav ul li a :hover {
+    background-color:black;
+    border-radius: 4px;
+
+} 
+.sidebar-nav .offcanvas{
+    width: 220px;
+    border: none;
+}
+.sidebar-nav .offcanvas ul li a span{
+    font-size: 15px;
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+}
+
+
+.sidebar-nav .dropdown-toggle::after{
+    position: relative;
+    top: 3px;
+}
+.dropdown .btn{
+    border: none;
+    background-color: none;
+
+}
+
+.dropdown .btn:hover{
+    background-color: black;
+    border-radius: 4px;
+}
+
+.dropdown ul{
+    background-color: ;
+
+}
+.dropdown ul li a{
+    font-size: 14px;
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+    }
+.dropdown ul li a:hover{
+    background-color:black;
+    border-radius: 4px;
+    color: aliceblue;
+}
+.dropdown .offcanvas.show ul li a:hover span{
+    padding-left: 10px;
+}
+.settings {
+
+    margin-top: 56px;
+   
+}
+
+
+
+
+
+
+
+
+
+

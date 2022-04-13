@@ -1,0 +1,184 @@
+body{
+
+    background-color:oldlace;
+}
+  .form-control{
+    background-color: oldlace;
+}
+.form-control-sm{
+    background-color: oldlace;
+}
+
+
+.sidebar-nav ul li a {
+    font-size: 26px;
+    text-decoration:none;
+    display: block;
+    padding: 6px 10px;
+    transition: 0.5s;
+    color: aliceblue;
+
+}
+.sidebar-nav ul li a :hover {
+    background-color:black;
+    border-radius: 4px;
+
+} 
+.sidebar-nav .offcanvas{
+    width: 220px;
+    border: none;
+}
+.sidebar-nav .offcanvas ul li a span{
+    font-size: 15px;
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+}
+
+
+.sidebar-nav .dropdown-toggle::after{
+    position: relative;
+    top: 3px;
+}
+.dropdown .btn{
+    border: none;
+    background-color: none;
+
+}
+
+.dropdown .btn:hover{
+    background-color: black;
+    border-radius: 4px;
+}
+
+/* .dropdown ul{
+    background-color: ;
+
+} */
+.dropdown ul li a{
+    font-size: 14px;
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+    }
+.dropdown ul li a:hover{
+    background-color:black;
+    border-radius: 4px;
+    color: aliceblue;
+}
+.dropdown .offcanvas.show ul li a:hover span{
+    padding-left: 10px;
+}
+
+
+table{
+    border: 1px solid black;
+
+   border-collapse: separate;
+   border-spacing: 0px;
+    width: 100%;
+    margin: auto;
+    
+    text-align: center;
+    
+    color:black;
+    min-width: max-content;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+ 
+    
+}
+
+
+ #show th,#show td{ 
+    border-collapse: separate;
+    border-spacing: 0px;
+    min-width: max-content;
+    padding: 10px;
+  
+
+}
+
+th{
+    font-size:12px ;
+
+    
+}
+#btna td input{
+    width: 100%;
+}
+.table .container{
+     background-color: bisque;
+ }
+ .paid-from .dropdown .btn:hover{
+    background-color: white;
+}
+
+
+#custom-button{
+    padding: 10px;
+    color: black;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#custom-button:hover{
+    background-color:whitesmoke;
+}
+#custom-text{
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+}
+#nameDiv{
+    margin-top: 50px;
+
+}
+.input{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+#entry{
+    width: 50px;
+    height: 30px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color:lightgray;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0 0.5);
+    margin: 10px;
+
+}
+
+
+td{
+    font-size:12px ;
+    color: black;
+    font-weight: 600;
+}
+
+.cc{
+    margin-top: 70px;
+}  
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
